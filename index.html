@@ -12,10 +12,19 @@
 </head>
 
 <body>
-  <!-- Áudio de fundo -->
-  <audio autoplay loop>
+    <!-- Áudio de fundo -->
+    <button onclick="playAudio()">Reproduzir Música</button>
+  <audio id="background-audio" loop>
     <source src="img/musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
   </audio>
+
+  <script>
+    function playAudio() {
+      const audio = document.getElementById("background-audio");
+      audio.play();
+    }
+  </script>
 
   <div class="container">
     <div class="one">
